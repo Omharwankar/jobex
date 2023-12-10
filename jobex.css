@@ -1,0 +1,468 @@
+body{
+    background-color: rgb(242, 242, 245);
+}
+a{
+    text-decoration: none;
+    color:grey;
+}
+.navba{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2px 10%;
+    height: 40px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0,0, 0.3);
+}
+.logo img{
+    width:40px ;
+    height: 40;
+    margin-right: 15px;
+    padding-left:  5px;
+    display: block;
+}
+.sarch{
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgb(242, 240, 240);
+}
+.navleft{
+    display: flex;
+    align-items: center;
+}
+.sarch img{
+    width: 25px;
+    padding: 5px;
+}
+.sarch input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+.cen ul li{
+        display: inline-block;
+        list-style: none;
+        margin-left: 1px;
+        
+}
+.cen ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    position: relative;
+    color:grey;
+    text-decoration: none;
+}
+.cen ul li a::after{
+    content: '  ';
+    width:0%;
+    height: 2px;
+    background-color: rgb(197, 197, 20);
+    position: absolute;
+    bottom:1px;
+    transition:1.0s;
+
+}
+
+.cen ul li a:hover::after{
+    width: 100%;
+    
+}
+.cen ul li a img{
+    width: 30px;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: "";
+    width: 10px;
+    border: 2px solid white;
+    height: 10px;
+    border-radius: 50%;
+    right: 0%;
+    top: 0%;
+    background: rgb(3, 234, 3);
+    position: absolute;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 6%;
+}
+.leftcon{
+    flex-basis: 25%;
+    align-items: flex-start;
+    background-color: rgb(255, 253, 253);
+}
+.profilebox{
+    background: rgb(255, 255, 255);
+}
+.profinfo{
+    padding: 0 25px;
+}
+.profinfo img{
+    width: 90px;
+    border-radius: 50%;
+    height: 90px;
+    background: rgb(255, 255, 255);
+    padding: 4px;
+    margin-top: -45%;
+}
+.profinfo h1{
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+}
+.profinfo h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(167, 164, 164);
+}
+.profinfo ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.profinfo ul li{
+    width: 100%;
+    margin: 3px -40px;
+  font-size: 14px;
+  color: rgb(167, 164, 164);
+}
+.profinfo ul li span{
+    float: right;
+    color: gold;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.5px rgb(255, 200, 0);
+    
+   
+}
+.recent{
+        border-top: 4px solid rgb(242, 242, 245);
+    background: white;
+    padding: 5px 25px;
+    margin: 13px 0;
+}
+.recent h3{
+    color: rgb(167, 164, 164);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.recent img{
+    height: 18px;
+    width: 18px;
+}
+.recent a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color:rgb(167, 164, 163);
+    text-decoration: none;
+}
+.discover{
+    border-top: 4px solid rgb(242, 242, 245);
+    background: white;
+    padding: 5px 25px;
+    margin: 13px 0;
+    font-size: 14px;
+}
+.discover a {
+    color:gold;
+    -webkit-text-stroke: 0.5px rgb(255, 200, 0);
+    display: inline-block;
+    margin-left: 80px ;
+    text-decoration: none;
+}
+   
+   
+
+
+
+
+.right-sidebar{
+    flex-basis: 25%;
+    align-items:flex-start;
+}
+.news{
+    background-color: #fff;
+    padding: 10px 25px;
+    
+}
+.infoicon{
+   width: 15px;
+   float:right;
+      ; 
+}
+.news h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 10px 0 30px ;
+}
+
+.newsside a{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    color: black;
+    text-decoration: none;
+    
+}
+.news span{
+    font-size: 12px;
+    color: grey;
+}
+.readmore{
+    color:gold;
+    -webkit-text-stroke: 0.5px rgb(255, 200, 0);
+    font-size: 12px;
+    text-decoration: none;
+}
+.advertise{
+    background-color: white;
+    padding: 10px 25px;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+.advertise img{
+    width: 60px;
+    border-radius: 50%;
+    margin: 4px;
+}
+.advertise small {
+   float: right;
+   font-weight: 600;
+}
+.advertise p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.advertise b{
+    display: block;
+    font-size: 14px;
+}
+.adlink{
+    display: inline-block;
+    border: 1px solid gold;
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: gold;
+    font-weight: 900;
+    margin: 20px auto 10px;
+    text-decoration: none;
+
+}
+.usefullinks{
+padding: 15px 25px;
+text-align: center;
+
+}
+.usefullinks a{
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    color: gray;
+    text-decoration: none;
+}
+.copyrigh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500px;
+}
+.copyrigh img{
+    width: 20px;
+    margin-top: -15px;
+    margin-right: 5px;
+}
+
+.maincon{
+    flex-basis: 47%;
+    /* align-items: flex-start; */
+}
+.postbox{
+    background: white;
+}
+.postinput{
+   padding: 10px 15px 10px; 
+   display: flex;
+   align-items: flex-start;
+   width: 200px;
+}
+.postinput img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.postinput img{
+    width: 30px;
+    height: 30px;
+}
+.postinput textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize:none ;
+    background: transparent;
+    margin-top: 8px;
+}
+.post-links{
+    display: flex;
+    align-items: flex-start;
+}
+.post-links li {
+    list-style: none;
+    border-top: 1px solid  lightgray;
+    border-right: 1px solid  lightgray;
+    flex-basis: 25%;
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.post-links li img{
+    width: 15px;
+    margin-right: 5px;
+}
+.post-links li:last-child{
+    background-color: gold;
+    color: white;
+    border-top: 0;
+    border-right: 0;
+}
+.sortby{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.sortby hr{
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background-color: lightgray;
+}
+.sortby p{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.sortby p span {
+    font-weight: 600px;
+    cursor: pointer;
+}
+.sortby p span img{
+    width: 12px;
+    margin-left:2px;
+}
+.post{
+    background: white;
+    padding: 20px 25px 5px ;
+    margin: 5px 0 15px;
+}
+.author{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+}
+.author img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 5px;
+    
+}
+.author h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
+}
+.author small{
+    display: block;
+    margin-bottom:10px;
+    
+    color: grey;
+}
+.postcontent{
+    line-height: 2px;
+}
+.post p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.poststats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+border-bottom: 1px lightgray;
+padding-bottom: 6px;
+}
+.poststats div{
+    display: flex;
+    align-items: center;
+
+}
+.poststats img{
+    width: 15px;
+    margin-right: -5px;
+}
+.liked-user{
+    margin-left: 10px;
+}
+.post-activity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.post-activity{
+    display: flex;
+    align-items: center;
+
+}
+.usericon-activity{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.userarrow-activity{
+    width: 12px;
+    margin-left: 5px;
+}
+.activity-link img{
+    width: 18px;
+    margin-right: 8px;
+}
